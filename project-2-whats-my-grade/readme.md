@@ -1,0 +1,5 @@
+Prompt:  explain the logic of the code in plain English.
+
+The script acts as a personal grading assistant. First, it looks at the Homework and Quiz scores. It sorts them from lowest to highest and simply chops off the bottom score, then averages the rest. It multiplies those averages by their specific weights (30% for homework, 20% for quizzes) to see how many 'points' you've banked in those categories.
+Next, it looks at the Midterm. It checks a specific condition: is the score below 50? Because your score is 72, the special rule is ignored, and it just calculates 20% of 72.
+Finally, it does 'reverse math' for the Final Exam. It adds up all the points you've banked so far and subtracts that from your target (80%). This tells it exactly how many points you are missing. It then divides those missing points by the Final Exam's weight (30%) to tell you the exact percentage you need to score on the test. It also includes a safety check: if the math says you need a 105% on the final, it will warn you that it's mathematically impossible.
